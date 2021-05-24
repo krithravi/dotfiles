@@ -1,0 +1,21 @@
+# here's a man page link:
+# https://manpages.ubuntu.com/manpages/trusty/man5/zathurarc.5.html
+
+# copy selection to system clipboard
+set selection-clipboard clipboard
+
+# sets the window title to filename only, not path as default
+set window-title-basename "true"
+
+# background in general is a dark green
+set default-bg "#02230d"
+
+set inputbar-bg "#001e0a" # input bar is a bit darker green
+set statusbar-bg "#001e0a" # status bar is a bit darker green
+
+# so i can actually see the thing
+set font "monospace normal 12"
+
+# when recoloring, what should the background be set to?
+# a greyish sort of green
+set recolor-lightcolor "#25422f" # base02
