@@ -6,9 +6,9 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-#PS1='[\u@\h \W]\$ '
+
 export PS1='\[\e[1;32m\]KR$ \[\e[m\]'
-# Alias definitions.
+
 if [ -f ~/.aliasrc ]; then
     . ~/.aliasrc
 fi
@@ -30,3 +30,7 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
+
+setxkbmap -option compose:ralt,caps:escape
+
+quo
