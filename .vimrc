@@ -1,17 +1,28 @@
 se rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'danro/rename.vim'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+	let g:UltiSnipsExpandTrigger="<tab>"
+	let g:UltiSnipsJumpForwardTrigger="<c-b>"
+	let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+	let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/mycoolsnippets']
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'thaerkh/vim-indentguides'
+	let g:indentguides_spacechar = '|'
+	let g:indentguides_tabchar = '▏'
+	let g:indentguides_firstlevel = get(g:, 'indentguides_firstlevel', 1)
 Plugin 'tribela/vim-transparent'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
+Plugin 'lervag/vimtex'
+    let g:tex_flavor='latex'
+    let g:vimtex_view_method='zathura'
+    let g:vimtex_quickfix_mode=0
 call vundle#end()
-syntax enable
+
 set number
 set cursorline
 set mouse=a
@@ -23,16 +34,7 @@ set si "Smart indent
 
 colorscheme PaperColor
 "let g:tex_conceal=""
-set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard
+set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 
-let g:indentguides_spacechar = '|'
-let g:indentguides_tabchar = '▏'
-let g:indentguides_firstlevel = get(g:, 'indentguides_firstlevel', 1)
-
-" UltiSnips config (snippets)
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/mycoolsnippets']
 
 map u <Nop>
