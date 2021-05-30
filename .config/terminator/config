@@ -1,14 +1,18 @@
 [global_config]
   focus = system
+  handle_size = 1
   borderless = True
   extra_styling = False
+  scroll_tabbar = True
+  homogeneous_tabbar = False
   title_hide_sizetext = True
-  title_transmit_fg_color = "#000000"
-  title_transmit_bg_color = "#94bf3f"
+  title_transmit_bg_color = "#013214"
   title_receive_bg_color = "#cc0000"
-  title_inactive_fg_color = "#ffffff"
-  title_inactive_bg_color = "#024608"
+  title_inactive_fg_color = "#deddda"
+  title_inactive_bg_color = "#012200"
+  inactive_color_offset = 1.0
   putty_paste_style_source_clipboard = True
+  line_height = 1.3
 [keybindings]
   split_vert = <Primary><Shift>i
   help = F7
@@ -24,7 +28,6 @@
     scrollbar_position = hidden
     scrollback_infinite = True
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-    use_system_font = False
 [layouts]
   [[default]]
     [[[window0]]]
