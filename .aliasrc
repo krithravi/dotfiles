@@ -45,6 +45,7 @@ alias boo='cd ~/books'
 alias play='cd ~/playground'
 alias dsk='cd ~/Desktop'
 alias conf='cd ~/.config'
+alias scr="cd ~/scripts"
 alias pippin='ssh pippin'
 
 # moving up directories faster (sorta like zsh)
@@ -73,7 +74,7 @@ alias vi='nvim' # neovim
 alias grep='grep --color=auto' # good colors
 alias show='zathura' # PDF viewer that's not trash
 alias mail='mutt' # mail client mutt
-alias defop='xdg-open' # opens with default application
+alias o='xdg-open' # opens with default application
 alias mypy='python3.9' # uses python 3.9
 alias nav='ranger' #ranger! for CLI file navigation
 alias gpt='gnuplot' #gnuplot yee
@@ -86,8 +87,15 @@ alias web='cd /home/krithika/code/webStuff/my-app' # my website
 ##########################################################
 # Computer stuff so I don't go crazy
 
-alias up='sudo apt-get -y update; sudo apt-get -y dist-upgrade'
-alias totclean='up; sudo apt-get -y clean ;sudo apt-get -y autoclean; sudo apt-get -y autoremove'
+# apt stuff - back from when i had ubuntu/debian
+#alias up='sudo apt-get -y update; sudo apt-get -y dist-upgrade'
+#alias totclean='up; sudo apt-get -y clean ;sudo apt-get -y autoclean; sudo apt-get -y autoremove'
+
+# pacman stuff for arch, current!
+alias inst="sudo pacman -S"
+alias up="sudo pacman -Syu"
+alias rem="sudo pacman -Rs"
+alias cl="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias reb='sudo reboot'
 alias wai='echo -e "You are in \e[1;34m$HOSTNAME\e[m"; pwd' #hostname in bright blue
 alias rel='source ~/.bashrc'
@@ -95,7 +103,7 @@ alias fn='find -name'
 alias proc='ps aux | grep'
 alias stor='du -h --max-depth=1 . | sort -h'
 alias eal='vi ~/.aliasrc'
-alias inst="sudo pacman -S"
+
 #increases brightness by input
 setb () {
 	b=$(xrandr --verbose | grep -m 1 -w connected -A8 | grep Brightness | cut -f2- -d: | tr -d ' ')
