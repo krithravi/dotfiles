@@ -8,7 +8,8 @@
 alias ls='ls --color=auto'
 
 #export PS1='\[\e[1;32m\]KR$ \[\e[m\]'
-export PS1='\[\e[1;32m\][\w ] \[\e[m\]'
+#export PS1='\[\e[1;32m\][\w ] \[\e[m\]'
+export PS1='\[\e[1;92m\][\w ] \[\e[m\]'
 if [ -f ~/.aliasrc ]; then
     . ~/.aliasrc
 fi

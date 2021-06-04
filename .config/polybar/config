@@ -23,7 +23,7 @@ monitor = ${env:MONITOR:}
 line-size = 3
 
 ; first 2 digits indicate level of transparency.
-background = #cc00331f
+background = #6600331f
 
 #background-0 = #67061e00
 #background-1 = #6700331f
