@@ -27,8 +27,8 @@ alias amek='make'
 # TODO get this later
 
 ## openconnect vpn
-alias vpnstart="sudo $HOME/scripts/vpn_start.sh"
-alias utvpn="sudo $HOME/scripts/utstart.sh"
+alias untvpn="sudo $HOME/scripts/unt_vpn_start.sh"
+alias utvpn="sudo $HOME/scripts/ut_vpn_start.sh"
 alias vpnend="sudo $HOME/scripts/vpn_end.sh"
 
 ##########################################################
