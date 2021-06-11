@@ -18,16 +18,16 @@
   help = F7
 [profiles]
   [[default]]
-    background_color = "#001701"
+    background_color = "#001604"
     background_darkness = 0.95
     cursor_blink = False
     cursor_shape = ibeam
     cursor_color = "#0acd7e"
     font = Source Code Pro 11
-    foreground_color = "#c5e9cf"
+    foreground_color = "#e7fee8"
     scrollbar_position = hidden
     scrollback_infinite = True
-    palette = "#000000:#e01b24:#1af462:#f5c211:#3465a4:#e671f8:#46f3fe:#f6f5f4:#555753:#f66151:#8ae234:#fce94f:#729fcf:#dc8add:#1ae5ee:#ffffff"
+    palette = "#000000:#e01b24:#30dd01:#f5c211:#3465a4:#e671f8:#46f3fe:#f6f5f4:#555753:#f66151:#1af462:#fce94f:#729fcf:#dc8add:#1ae5ee:#ffffff"
 [layouts]
   [[default]]
     [[[window0]]]

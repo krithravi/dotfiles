@@ -23,7 +23,7 @@ alias amek='make'
 
 ##########################################################
 # SSH
-
+alias risk="ssh krithika@risk.cs.utexas.edu"
 # TODO get this later
 
 ## openconnect vpn
@@ -44,7 +44,7 @@ alias dwn='cd ~/Downloads'
 alias boo='cd ~/books'
 alias play='cd ~/playground'
 alias dsk='cd ~/Desktop'
-alias conf='cd ~/.config'
+alias conf='cd ~/dotfiles/.config'
 alias scr="cd ~/scripts"
 alias pippin='ssh pippin'
 
