@@ -103,7 +103,7 @@ alias fn='find -name'
 alias p='ps aux | grep'
 alias stor='du -h --max-depth=1 . | sort -h'
 alias eal='vi ~/.aliasrc; rel'
-
+alias c='calcurse'
 #increases brightness by input
 setb () {
 	b=$(xrandr --verbose | grep -m 1 -w connected -A8 | grep Brightness | cut -f2- -d: | tr -d ' ')
