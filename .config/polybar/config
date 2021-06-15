@@ -12,32 +12,35 @@ magenta = #f40756
 #**************************************************************************#
 [bar/mybar]
 
-width = 100%
-height = 20
+width = 60%
+height = 1.7%
+
+override-redirect = true
+offset-x = 20%
+
 fixed-center = true
 ; repeats for all monitors
 monitor = ${env:MONITOR:}
 ; need this for underlining!
-line-size = 3
+line-size = 2
+padding = 3
+radius = 8
+module-margin = 1
 
-; first 2 digits indicate level of transparency.
 ;background = #aa00331f
 foreground = #a4f280
-background = #d01e1e1e
+background = #70000000
 #background-0 = #67061e00
 #background-1 = #6700331f
 
-
-font-0 =Source Code Variable:style=Regular;1
-font-1 =FreeSerif:style=Regular;1
+font-0 =Source Code Pro:style=Regular:size=11;1
+font-1 =Noto Sans:style=Regular:size=11;1
+font-2 =Noto Color Emoji:style=Regular:scale=10
 
 modules-center = date
 modules-left = i3 pulseaudio
 modules-right = backlight battery network
 
-#bottom=true
-#override-redirect = true
-#wm-restack = i3
 #**************************************************************************#
 [module/date]
 
@@ -71,7 +74,7 @@ ramp-signal-4 = •••••
 
 type = internal/battery
 ; This is useful in case the battery never reports 100% charge
-full-at = 99
+;full-at = 99
 
 battery = BAT0
 adapter = AC
@@ -79,14 +82,13 @@ adapter = AC
 poll-interval = 5
 
 format-charging = <label-charging>
-label-charging = ↑%percentage%%
+label-charging = ↑ %percentage%%
 format-charging-padding = 2
 
 format-discharging = <label-discharging>
-label-discharging = ↓%percentage%%
+label-discharging = ↓ %percentage%%
 format-discharging-padding = 2
 
-#label-full = B + ≧◔◡◔≦[1:]
 label-full = ❤
 format-full-padding = 2
 
@@ -95,33 +97,40 @@ format-full-padding = 2
 
 type = internal/pulseaudio
 
-format-volume = ♫ <label-volume>
+format-volume = ♫ <bar-volume>
 format-volume-padding = 2
 
-label-muted = × muted
+bar-volume-width = 10
+bar-volume-indicator = 🌺
+bar-volume-fill = ─
+bar-volume-empty = ─
+
+
+format-muted = × <bar-volume>
 format-muted-padding = 2
 
 click-right = pavucontrol
 #**************************************************************************#
-; NO LONGER USE BC STRESS
 [module/i3]
 type = internal/i3
 index-sort = true
 pin-workspaces = true
 format = <label-state>
 
-label-focused = %index%
+
+
+label-focused =  %index%
 label-focused-padding = 1
 label-focused-underline = ${colors.orange}
 
-label-unfocused = %index%
+label-unfocused =  %index%
 label-unfocused-padding = 1
 
 label-visible = %index%
 label-visible-padding = 1
 label-visible-underline = ${colors.deepGreen}
 
-label-urgent = %index%
+label-urgent =  %index%
 label-urgent-padding = 1
 label-urgent-underline = ${colors.magenta}
 
@@ -132,7 +141,7 @@ label-urgent-underline = ${colors.magenta}
 [module/backlight]
 type = internal/backlight
 card = intel_backlight
-format = <bar>
+format =  <bar>
 label = %percentage%%
 format-padding = 2
 
@@ -141,3 +150,4 @@ bar-indicator = ☀
 bar-fill = ─
 bar-empty = ─
 #**************************************************************************#
+
