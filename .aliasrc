@@ -126,6 +126,6 @@ mgo () {
 # Fun stuff!
 
 alias frog='cat ~/fun/frog.txt'
-alias quo='mypy $HOME/scripts/quote/quote.py'
+alias quo='py $HOME/scripts/quote/quote.py'
 alias cc='fortune' #fortune! cookie...
 alias frogfortune='fortune | cowthink -f bud-frogs'
