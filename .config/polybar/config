@@ -12,11 +12,11 @@ magenta = #f40756
 #**************************************************************************#
 [bar/mybar]
 
-width = 60%
+width = 70%
 height = 1.7%
 
 override-redirect = true
-offset-x = 20%
+offset-x = 15%
 
 fixed-center = true
 ; repeats for all monitors
@@ -100,7 +100,7 @@ type = internal/pulseaudio
 format-volume = ♫ <bar-volume>
 format-volume-padding = 2
 
-bar-volume-width = 10
+bar-volume-width = 15
 bar-volume-indicator = 🌺
 bar-volume-fill = ─
 bar-volume-empty = ─
@@ -145,7 +145,7 @@ format =  <bar>
 label = %percentage%%
 format-padding = 2
 
-bar-width = 10
+bar-width = 15
 bar-indicator = ☀
 bar-fill = ─
 bar-empty = ─
