@@ -74,13 +74,13 @@ alias vi='nvim' # neovim
 alias grep='grep --color=auto' # good colors
 alias z='zathura' # PDF viewer that's not trash
 alias mail='mutt' # mail client mutt
+alias g="grep" # grep yawyeet
+alias gi="grep -i" # case insensitive bc I can't be bothered
 alias o='xdg-open' # opens with default application
-alias mypy='python3.9' # uses python 3.9
+alias py='python3.9' # uses python 3.9
 alias nav='ranger' #ranger! for CLI file navigation
 alias gpt='gnuplot' #gnuplot yee
 alias img='eog *.png' #show all PNG images
-alias ridzoom='killall -r '[z,Z]oom'' #zoom is really jank
-alias scs='flameshot gui &' #screenshot
 alias todo='vi ~/todo' # my todo list
 alias holy='z ~/books/funBooks/jirt/FotR.pdf' # fellowship
 alias web='cd /home/krithika/code/webStuff/my-app' # my website
