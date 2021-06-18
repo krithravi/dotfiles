@@ -57,7 +57,8 @@ alias .....="cd ../../../.."
 ##########################################################
 
 # Git stuff
-alias gad='git add *'
+alias gad='git add'
+alias gall='git add *'
 alias gstat='git status'
 alias gull='git pull'
 alias gush='git push'
