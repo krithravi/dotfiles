@@ -21,6 +21,11 @@ Plugin 'lervag/vimtex'
 	let g:tex_flavor='latex'
 	let g:vimtex_view_method='zathura'
 	let g:vimtex_quickfix_mode=0
+Plugin 'vim-airline/vim-airline'
+	let g:airline_section_z = '%l/%L :%c %p%%'
+	"let g:airline#extensions#tabline#enabled = 1
+Plugin 'vim-airline/vim-airline-themes'
+	let g:airline_theme='angr'
 call vundle#end()
 
 set number
@@ -36,5 +41,6 @@ colorscheme PaperColor
 "let g:tex_conceal=""
 set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 
-
 map u <Nop>
+autocmd BufWritePre * :%s/\s\+$//e
+
