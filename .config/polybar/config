@@ -12,11 +12,7 @@ magenta = #f40756
 #**************************************************************************#
 [bar/mybar]
 
-width = 70%
 height = 1.7%
-
-override-redirect = true
-offset-x = 15%
 
 fixed-center = true
 ; repeats for all monitors
@@ -24,14 +20,16 @@ monitor = ${env:MONITOR:}
 ; need this for underlining!
 line-size = 2
 padding = 3
-radius = 8
 module-margin = 1
 
-;background = #aa00331f
+# green background
 foreground = #a4f280
-background = #70000000
-#background-0 = #67061e00
-#background-1 = #6700331f
+background = #99000000
+
+# that time i went purple
+#foreground = #f7c5ec
+#background = #000000
+
 
 font-0 =Source Code Pro:style=Regular:size=11;1
 font-1 =Noto Sans:style=Regular:size=11;1

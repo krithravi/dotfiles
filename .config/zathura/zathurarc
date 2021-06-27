@@ -13,9 +13,17 @@ set default-bg "#02230d"
 set inputbar-bg "#001e0a" # input bar is a bit darker green
 set statusbar-bg "#001e0a" # status bar is a bit darker green
 
+# background in general is a dark purple
+#set default-bg "#230e1f"
+
+#set inputbar-bg "#190a16" # input bar is a bit darker green
+#set statusbar-bg "#190a16" # status bar is a bit darker green
+
 # so i can actually see the thing
-set font "monospace normal 12"
+set font "monospace normal 11"
 
 # when recoloring, what should the background be set to?
 # a greyish sort of green
 set recolor-lightcolor "#25422f" # base02
+# a greyish sort of purple
+#set recolor-lightcolor "#281a25" # base02
