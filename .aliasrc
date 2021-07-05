@@ -101,7 +101,7 @@ alias cl="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias reb='sudo reboot'
 alias wai='echo -e "You are in \e[1;35m$HOSTNAME\e[m"; pwd' #hostname in bright pink
 alias rel='source ~/.bashrc'
-alias fn='find -name'
+alias fn='find . -name'
 alias p='ps aux | g'
 alias stor='du -h --max-depth=1 . | sort -h'
 alias eal='vi ~/.aliasrc; rel'

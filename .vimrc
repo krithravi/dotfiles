@@ -26,6 +26,8 @@ Plugin 'vim-airline/vim-airline'
 	"let g:airline#extensions#tabline#enabled = 1
 Plugin 'vim-airline/vim-airline-themes'
 	let g:airline_theme='angr'
+Plugin 'ap/vim-css-color'
+Plugin 'fatih/molokai'
 call vundle#end()
 
 set number
@@ -38,9 +40,10 @@ set ai "Auto indent
 set si "Smart indent
 
 colorscheme PaperColor
+"colorscheme molokai
+"let g:molokai_original = 1
 "let g:tex_conceal=""
 set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 
 map u <Nop>
 autocmd BufWritePre * :%s/\s\+$//e
-

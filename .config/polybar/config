@@ -24,7 +24,7 @@ module-margin = 1
 
 # green background
 foreground = #a4f280
-background = #99000000
+background = #77000000
 
 # that time i went purple
 #foreground = #f7c5ec

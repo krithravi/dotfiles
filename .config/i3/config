@@ -176,10 +176,11 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id xrandr --output DP3 --right-of eDP1
 exec_always --no-startup-id xrandr --output eDP1 --left-of DP3
+
+exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec_always --no-startup-id setxkbmap -option compose:ralt,caps:escape
 
-exec_always --no-startup-id feh --bg-fill ~/Desktop/bigleaf.jpg
-exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
+exec_always --no-startup-id feh --bg-fill ~/Desktop/manytree.jpg
 exec_always --no-startup-id pulseaudio
 # Tapping and natural scrolling
 exec_always --no-startup-id xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Tapping Enabled" 1 &
@@ -201,7 +202,7 @@ bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
 for_window [class="^.*"] border pixel 2
 #client
 # class                 border  backgr. text    indicator child_border
-client.focused          #000000 #76e0b0 #000000 #23a09c   #23a09c
+client.focused          #000000 #76e0b0 #000000 #23a09c   #4580b7
 client.focused_inactive #333333 #1c4a32 #ffffff #484e50   #5f676a
 client.unfocused        #f4de9a #222222 #ffffff #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
