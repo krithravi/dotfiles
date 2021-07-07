@@ -59,7 +59,7 @@ alias .....="cd ../../../.."
 
 # Git stuff
 alias gad='git add'
-alias gall='git add *'
+alias gal='git add .'
 alias gstat='git status'
 alias gull='git pull'
 alias gush='git push'
@@ -99,7 +99,7 @@ alias up="sudo pacman -Syu"
 alias rem="sudo pacman -Rs"
 alias cl="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias reb='sudo reboot'
-alias wai='echo -e "You are in \e[1;35m$HOSTNAME\e[m"; pwd' #hostname in bright pink
+alias wai='echo -e "\e[38;5;72m$USER\e[m is in \e[38;5;81m$HOSTNAME\e[m"; pwd'
 alias rel='source ~/.bashrc'
 alias fn='find . -name'
 alias p='ps aux | g'

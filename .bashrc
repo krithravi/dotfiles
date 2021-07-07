@@ -9,7 +9,9 @@ alias ls='ls --color=auto'
 
 #export PS1='\[\e[1;32m\]KR$ \[\e[m\]'
 #export PS1='\[\e[1;32m\][\w ] \[\e[m\]'
-export PS1='\[\e[1;92m\][\w ] \[\e[m\]'
+#export PS1='\[\e[1;92m\][\w] \[\e[m\]'
+#export PS1='\[\e[38;5;154m\][\w@\[\e[m\]\[\e[38;5;218m\]\H\[\e[m\]\[\e[38;5;154m\]] \[\e[m\]'
+export PS1='\[\e[38;5;154m\]$ \[\e[m\]'
 if [ -f ~/.aliasrc ]; then
     . ~/.aliasrc
 fi
@@ -36,4 +38,4 @@ export EDITOR="/usr/bin/nvim"
 
 setxkbmap -option compose:ralt,caps:escape
 
-quo
+#quo

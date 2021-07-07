@@ -1,7 +1,6 @@
 [global_config]
   focus = system
   handle_size = 2
-  borderless = True
   extra_styling = False
   scroll_tabbar = True
   homogeneous_tabbar = False

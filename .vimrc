@@ -14,7 +14,7 @@ Plugin 'thaerkh/vim-indentguides'
 	let g:indentguides_spacechar = '|'
 	let g:indentguides_tabchar = '▏'
 	let g:indentguides_firstlevel = get(g:, 'indentguides_firstlevel', 1)
-Plugin 'tribela/vim-transparent'
+"Plugin 'tribela/vim-transparent'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'lervag/vimtex'
@@ -27,7 +27,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 	let g:airline_theme='angr'
 Plugin 'ap/vim-css-color'
-Plugin 'fatih/molokai'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'dracula/vim'
 call vundle#end()
 
 set number
