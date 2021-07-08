@@ -16,14 +16,18 @@ if [ -f ~/.aliasrc ]; then
     . ~/.aliasrc
 fi
 
-LS_COLORS="di=1;36:*.png=1;33:\
-*.jpg=1;33:*.jpeg=1;33:*.zip=1;31:*.jar=1;31:\
-*.tar.gz=1;31:*pdf=1;32:*djvu=1;32:\
+
+LS_COLORS="di=38;5;14:\
+*.png=1;33:*.jpg=1;33:*.jpeg=1;33:\
+*.zip=0;31:*.jar=0;31:\*.tar.gz=0;31:*.tar=0;31\
+*pdf=1;32:*djvu=1;32:*mobi=1;32:*epub=1;32\
 *.tex=0;32:*.html=0;32:*.md=0;32:\
-*.cpp=0;33:*.c=0;33:*.java=0;33:*.py=0;33:\
-*.js=0;33:*.r=0;33:*.gnu=0;33:\
-*akefile=1;34:ex=1;33:\
-*.dat=0;35:*.class=0;35:*.txt=0;35" ; export LS_COLORS;
+*.cpp=0;33:*.c=0;33:*.java=0;33:*.py=0;33:*.js=0;33:*.r=0;33:*.gnu=0;33:\
+*akefile=1;34:\
+ex=1;33:\
+*.dat=0;35:*.class=0;35:*.txt=38;5;56"
+
+export LS_COLORS;
 
 # making man pages a bit easier to read
 export LESS_TERMCAP_mb=$'\E[01;31m'

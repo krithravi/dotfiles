@@ -1,6 +1,6 @@
 [global_config]
   focus = system
-  handle_size = 2
+  handle_size = 1
   extra_styling = False
   scroll_tabbar = True
   homogeneous_tabbar = False
@@ -17,17 +17,20 @@
   help = F7
 [profiles]
   [[default]]
-    background_color = "#091706"
-    background_darkness = 0.95
+    background_color = "#001500"
+    background_darkness = 0.69
+    background_type = transparent
     cursor_blink = False
     cursor_shape = ibeam
     cursor_color = "#0acd7e"
-    font = Source Code Variable 10
+    font = Liberation Mono 10
     foreground_color = "#e7fee8"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
     palette = "#000000:#e01b24:#30dd01:#f5c211:#3465a4:#e671f8:#46f3fe:#f6f5f4:#555753:#f66151:#1af462:#fce94f:#729fcf:#dc8add:#1ae5ee:#ffffff"
+    use_system_font = False
+    background_image = /home/krithika/Desktop/manytree.jpg
 [layouts]
   [[default]]
     [[[window0]]]

@@ -27,8 +27,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 	let g:airline_theme='angr'
 Plugin 'ap/vim-css-color'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'dracula/vim'
+Plugin 'ycm-core/YouCompleteMe'
 call vundle#end()
 
 set number
