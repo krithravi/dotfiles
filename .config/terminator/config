@@ -18,8 +18,7 @@
 [profiles]
   [[default]]
     background_color = "#001500"
-    background_darkness = 0.69
-    background_type = transparent
+    background_darkness = 0.71
     cursor_blink = False
     cursor_shape = ibeam
     cursor_color = "#0acd7e"
@@ -29,7 +28,7 @@
     scrollbar_position = hidden
     scrollback_infinite = True
     palette = "#000000:#e01b24:#30dd01:#f5c211:#3465a4:#e671f8:#46f3fe:#f6f5f4:#555753:#f66151:#1af462:#fce94f:#729fcf:#dc8add:#1ae5ee:#ffffff"
-    use_system_font = False
+    bold_is_bright = True
     background_image = /home/krithika/Desktop/manytree.jpg
 [layouts]
   [[default]]
