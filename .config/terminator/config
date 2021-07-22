@@ -1,7 +1,6 @@
 [global_config]
-  focus = system
+  focus = mouse
   handle_size = 1
-  extra_styling = False
   scroll_tabbar = True
   homogeneous_tabbar = False
   title_hide_sizetext = True
@@ -17,13 +16,13 @@
   help = F7
 [profiles]
   [[default]]
-    background_color = "#001500"
-    background_darkness = 0.71
+    background_darkness = 0.77
+    background_type = transparent
     cursor_blink = False
     cursor_shape = ibeam
     cursor_color = "#0acd7e"
-    font = Liberation Mono 10
-    foreground_color = "#e7fee8"
+    font = Source Code Pro 11
+    foreground_color = "#e3e3e3"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True

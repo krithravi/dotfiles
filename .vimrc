@@ -20,7 +20,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 	let g:airline_theme='angr'
 Plugin 'ap/vim-css-color'
-Plugin 'ycm-core/YouCompleteMe'
+"Plugin 'ycm-core/YouCompleteMe'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 call vundle#end()
@@ -34,7 +34,6 @@ set tabstop=4
 set ai "Auto indent
 set si "Smart indent
 
-syn match cOperator "[+/*%^&|<>-]"
 colorscheme hello
 "let g:tex_conceal=""
 set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip

@@ -180,7 +180,7 @@ exec_always --no-startup-id xrandr --output eDP1 --left-of DP3
 exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec_always --no-startup-id setxkbmap -option compose:ralt,caps:escape
 
-exec_always --no-startup-id feh --bg-fill ~/Desktop/manytree.jpg
+exec_always --no-startup-id feh --bg-fill ~/Desktop/grass.jpg
 exec_always --no-startup-id pulseaudio
 # Tapping and natural scrolling
 exec_always --no-startup-id xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Tapping Enabled" 1 &

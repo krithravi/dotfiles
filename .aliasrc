@@ -25,7 +25,7 @@ alias amek='make'
 
 ##########################################################
 # SSH
-alias risk="ssh krithika@risk.cs.utexas.edu"
+alias risk="ssh -t krithika@risk.cs.utexas.edu"
 # TODO get this later
 
 ## openconnect vpn
