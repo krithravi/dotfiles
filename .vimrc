@@ -15,10 +15,6 @@ Plugin 'lervag/vimtex'
 	let g:tex_flavor='latex'
 	let g:vimtex_view_method='zathura'
 	let g:vimtex_quickfix_mode=0
-Plugin 'vim-airline/vim-airline'
-	let g:airline_section_z = '%l/%L :%c %p%%'
-Plugin 'vim-airline/vim-airline-themes'
-	let g:airline_theme='angr'
 Plugin 'ap/vim-css-color'
 "Plugin 'ycm-core/YouCompleteMe'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -39,4 +35,31 @@ colorscheme hello
 set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 
 map u <Nop>
-autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
+
+hi NormalColor guifg=Black guibg=Green ctermbg=85 ctermfg=232 cterm=bold
+hi InsertColor guifg=Black guibg=Cyan ctermbg=81 ctermfg=232 cterm=bold
+hi ReplaceColor guifg=Black guibg=maroon1 ctermbg=165 ctermfg=232 cterm=bold
+hi VisualColor guifg=Black guibg=Orange ctermbg=141 ctermfg=232 cterm=bold
+hi CommandColor guifg=Black guibg=Orange ctermbg=218 ctermfg=232 cterm=bold
+
+hi hello ctermbg=236 ctermfg=15
+
+set statusline=
+
+set statusline+=%#NormalColor#%{(mode()=='n')?'\ \ NORMAL\ ':''}
+set statusline+=%#InsertColor#%{(mode()=='i')?'\ \ INSERT\ ':''}
+set statusline+=%#ReplaceColor#%{(mode()=='R')?'\ \ REPLACE\ ':''}
+set statusline+=%#VisualColor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+set statusline+=%#VisualColor#%{(mode()=='V')?'\ \ VISUAL\ ':''}
+set statusline+=%#VisualColor#%{(mode()=='vb')?'\ \ VISUAL\ ':''}
+set statusline+=%#CommandColor#%{(mode()=='c')?'\ \ COMMAND\ ':''}
+set statusline+=%#hello#
+
+set statusline+=\ %f
+set statusline+=\ %m
+set statusline+=\ %r
+set statusline+=%=%y
+set statusline+=\ %5.l/%L
+set statusline+=\ :%3.c
+set statusline+=\ %3.3p%%\ 
