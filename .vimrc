@@ -63,3 +63,8 @@ set statusline+=%=%y
 set statusline+=\ %5.l/%L
 set statusline+=\ :%3.c
 set statusline+=\ %3.3p%%\ 
+
+
+set guicursor+=n:ver100-iCursor
+set guicursor+=v:ver100-iCursor
+set guicursor+=c:ver100-iCursor

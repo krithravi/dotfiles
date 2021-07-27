@@ -37,7 +37,7 @@ font-2 =Noto Color Emoji:style=Regular:scale=10
 
 modules-center = date
 modules-left = i3 pulseaudio
-modules-right = backlight battery network
+modules-right = backlight battery
 
 #**************************************************************************#
 [module/date]
@@ -46,26 +46,6 @@ type = internal/date
 interval = 1.0
 # fullDay, dayNum fullMonth | 14:23:10
 date = %A, %d %B | %t %X
-
-#**************************************************************************#
-[module/network]
-
-type = internal/network
-interface = wlan0
-interval = 3.0
-
-label-connected = %essid%
-format-connected = <ramp-signal>
-format-connected-padding = 2
-
-format-disconnected = X
-format-disconnected-padding = 2
-
-ramp-signal-0 = •◦◦◦◦
-ramp-signal-1 = ••◦◦◦
-ramp-signal-2 = •••◦◦
-ramp-signal-3 = ••••◦
-ramp-signal-4 = •••••
 
 #**************************************************************************#
 [module/battery]
@@ -79,16 +59,28 @@ adapter = AC
 
 poll-interval = 5
 
-format-charging = <label-charging>
-label-charging = ↑ %percentage%%
+format-charging = <label-charging> <ramp-capacity>
+label-charging = ↑
 format-charging-padding = 2
 
-format-discharging = <label-discharging>
-label-discharging = ↓ %percentage%%
+format-discharging = <label-discharging> <ramp-capacity>
+label-discharging = ↓
 format-discharging-padding = 2
+
 
 label-full = ❤
 format-full-padding = 2
+
+ramp-capacity-0 = •◦◦◦◦◦◦◦◦◦
+ramp-capacity-1 = ••◦◦◦◦◦◦◦◦
+ramp-capacity-2 = •••◦◦◦◦◦◦◦
+ramp-capacity-3 = ••••◦◦◦◦◦◦
+ramp-capacity-4 = •••••◦◦◦◦◦
+ramp-capacity-5 = ••••••◦◦◦◦
+ramp-capacity-6 = •••••••◦◦◦
+ramp-capacity-7 = ••••••••◦◦
+ramp-capacity-8 = •••••••••◦
+ramp-capacity-9 = ••••••••••
 
 #**************************************************************************#
 [module/pulseaudio]
