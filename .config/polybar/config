@@ -90,7 +90,7 @@ type = internal/pulseaudio
 format-volume = ♫ <bar-volume>
 format-volume-padding = 2
 
-bar-volume-width = 20
+bar-volume-width = 25
 bar-volume-indicator = 🌺
 bar-volume-fill = ─
 bar-volume-empty = ─

@@ -191,8 +191,8 @@ exec_always --no-startup-id xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "li
 #bindsym XF86MonBrightnessUp exec /home/krithika/scripts/bright_up.sh
 #bindsym XF86MonBrightnessDown exec /home/krithika/scripts/bright_down.sh
 
-bindsym XF86MonBrightnessUp exec brightnessctl s +2%
-bindsym XF86MonBrightnessDown exec brightnessctl s 2%-
+bindsym XF86MonBrightnessUp exec brightnessctl s +5%
+bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
 # Sound
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%-

@@ -16,7 +16,6 @@ Plugin 'lervag/vimtex'
 	let g:vimtex_view_method='zathura'
 	let g:vimtex_quickfix_mode=0
 Plugin 'ap/vim-css-color'
-"Plugin 'ycm-core/YouCompleteMe'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 call vundle#end()
@@ -37,7 +36,7 @@ set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 map u <Nop>
 "autocmd BufWritePre * :%s/\s\+$//e
 
-hi NormalColor guifg=Black guibg=Green ctermbg=85 ctermfg=232 cterm=bold
+hi NormalColor guifg=Black guibg=Green ctermbg=120 ctermfg=232 cterm=bold
 hi InsertColor guifg=Black guibg=Cyan ctermbg=81 ctermfg=232 cterm=bold
 hi ReplaceColor guifg=Black guibg=maroon1 ctermbg=165 ctermfg=232 cterm=bold
 hi VisualColor guifg=Black guibg=Orange ctermbg=141 ctermfg=232 cterm=bold
@@ -65,6 +64,4 @@ set statusline+=\ :%3.c
 set statusline+=\ %3.3p%%\ 
 
 
-set guicursor+=n:ver100-iCursor
 set guicursor+=v:ver100-iCursor
-set guicursor+=c:ver100-iCursor
