@@ -44,24 +44,5 @@ hi CommandColor guifg=Black guibg=Orange ctermbg=218 ctermfg=232 cterm=bold
 
 hi hello ctermbg=236 ctermfg=15
 
-set statusline=
-
-set statusline+=%#NormalColor#%{(mode()=='n')?'\ \ NORMAL\ ':''}
-set statusline+=%#InsertColor#%{(mode()=='i')?'\ \ INSERT\ ':''}
-set statusline+=%#ReplaceColor#%{(mode()=='R')?'\ \ REPLACE\ ':''}
-set statusline+=%#VisualColor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
-set statusline+=%#VisualColor#%{(mode()=='V')?'\ \ VISUAL\ ':''}
-set statusline+=%#VisualColor#%{(mode()=='vb')?'\ \ VISUAL\ ':''}
-set statusline+=%#CommandColor#%{(mode()=='c')?'\ \ COMMAND\ ':''}
-set statusline+=%#hello#
-
-set statusline+=\ %f
-set statusline+=\ %m
-set statusline+=\ %r
-set statusline+=%=%y
-set statusline+=\ %5.l/%L
-set statusline+=\ :%3.c
-set statusline+=\ %3.3p%%\ 
-
 
 set guicursor+=v:ver100-iCursor
