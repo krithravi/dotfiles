@@ -8,7 +8,7 @@ set selection-clipboard clipboard
 set window-title-basename "true"
 
 # background in general is a dark green
-set default-bg "#02230d"
+set default-bg "#011c0a"
 
 set inputbar-bg "#001e0a" # input bar is a bit darker green
 set statusbar-bg "#001e0a" # status bar is a bit darker green

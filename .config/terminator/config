@@ -16,7 +16,7 @@
   help = F7
 [profiles]
   [[default]]
-    background_color = "#001c15"
+    background_color = "#02180a"
     background_darkness = 0.82
     background_type = transparent
     cursor_blink = False

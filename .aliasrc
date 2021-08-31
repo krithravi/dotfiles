@@ -1,6 +1,6 @@
 # some more ls aliases
 alias ls='lsd'
-alias ll='ls -alF'
+alias ll='ls -l'
 alias la='ls -A'
 alias l='ls'
 alias lt='ls -lrth'
