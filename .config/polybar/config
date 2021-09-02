@@ -2,8 +2,8 @@
 
 white = #fff
 black = #000
-# orange, for current window
-orange = #ef9f0b
+# brightGreen, for current window
+brightGreen = #38fc0c
 # a deeper green for visible windows
 deepGreen = #48aa01
 # a magenta for urgent
@@ -111,7 +111,7 @@ format = <label-state>
 
 label-focused =  %index%
 label-focused-padding = 1
-label-focused-underline = ${colors.orange}
+label-focused-underline = ${colors.brightGreen}
 
 label-unfocused =  %index%
 label-unfocused-padding = 1
