@@ -40,7 +40,7 @@ font-2 =Noto Color Emoji:style=Regular:scale=12;2
 
 modules-center = date
 modules-left = i3 pulseaudio
-modules-right = backlight battery
+modules-right = spotify backlight battery
 
 #**************************************************************************#
 [module/date]
@@ -156,4 +156,17 @@ bar-indicator = ☀
 bar-fill = ─
 bar-empty = ─
 #**************************************************************************#
-
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = "♫ "
+format = <label>
+format-padding = 2
+#exec = python ~/scripts/spotify_status.py -f -p 'a,b' -f {play_pause} {artist}: {song}' -t 50
+#exec = python ~/scripts/spotify_status.py -t 130 -p ', ' -f '{play_pause} {song}: {artist}
+exec = python ~/scripts/spotify_status.py -t 130 -p '▶️,×' -f '{play_pause} {artist}: {song}'
+;format-underline = #1db954
+;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+click-right = playerctl --player=spotify next 
+click-middle = playerctl --player=spotify previous 
