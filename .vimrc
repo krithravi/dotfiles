@@ -17,7 +17,12 @@ Plugin 'lervag/vimtex'
 	let g:vimtex_quickfix_mode=0
 Plugin 'ap/vim-css-color'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-
+Plugin 'scrooloose/nerdtree'
+	map <C-n> :NERDTreeToggle<CR>
+Plugin 'preservim/tagbar'
+	map <C-m> :TagbarToggle<CR>
+Plugin 'tpope/vim-commentary'
+	
 call vundle#end()
 
 set number

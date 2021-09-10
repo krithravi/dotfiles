@@ -12,8 +12,8 @@ magenta = #f40756
 #**************************************************************************#
 [bar/mybar]
 
-height = 2%
-
+height = 1.8%
+override-redirect = true
 fixed-center = true
 ; repeats for all monitors
 monitor = ${env:MONITOR:}
@@ -23,17 +23,20 @@ padding = 3
 module-margin = 1
 
 # green background
-foreground = #a4f280
-background = #77000000
+#foreground = #a4f280
+foreground = #7ff4d5
+#background = #77000000
+
+background = #00ffffff
 
 # that time i went purple
 #foreground = #f7c5ec
 #background = #000000
 
 
-font-0 =Source Code Pro:style=Regular:size=11;2
-font-1 =Noto Sans:style=Regular:size=11;2
-font-2 =Noto Color Emoji:style=Regular:scale=10;2
+font-0 =Source Code Pro:style=Regular:size=10;2
+font-1 =Noto Sans:style=Regular:size=10;2
+font-2 =Noto Color Emoji:style=Regular:scale=12;2
 
 modules-center = date
 modules-left = i3 pulseaudio
@@ -45,7 +48,8 @@ modules-right = backlight battery
 type = internal/date
 interval = 1.0
 # fullDay, dayNum fullMonth | 14:23:10
-date = %A, %d %B | %t %X
+# date = %A, %d %B | %t %X
+date = %t %X
 
 #**************************************************************************#
 [module/battery]
@@ -59,29 +63,41 @@ adapter = AC
 
 poll-interval = 5
 
-format-charging = <label-charging> <ramp-capacity>
-label-charging = ↑
+format-charging = <label-charging>
+label-charging = ⚡ %percentage%%
 format-charging-padding = 2
 
-format-discharging = <label-discharging> <ramp-capacity>
-label-discharging = ↓
+format-discharging = <label-discharging> 
+label-discharging = ↓ %percentage%%
 format-discharging-padding = 2
 
 
-label-full = ❤
+label-full = ❤ %percentage%%
 format-full-padding = 2
 
-ramp-capacity-0 = •◦◦◦◦◦◦◦◦◦
-ramp-capacity-1 = ••◦◦◦◦◦◦◦◦
-ramp-capacity-2 = •••◦◦◦◦◦◦◦
-ramp-capacity-3 = ••••◦◦◦◦◦◦
-ramp-capacity-4 = •••••◦◦◦◦◦
-ramp-capacity-5 = ••••••◦◦◦◦
-ramp-capacity-6 = •••••••◦◦◦
-ramp-capacity-7 = ••••••••◦◦
-ramp-capacity-8 = •••••••••◦
-ramp-capacity-9 = ••••••••••
-
+;<ramp-capacity>
+;ramp-capacity-0 = •◦◦◦◦◦◦◦◦◦
+;ramp-capacity-1 = ••◦◦◦◦◦◦◦◦
+;ramp-capacity-2 = •••◦◦◦◦◦◦◦
+;ramp-capacity-3 = ••••◦◦◦◦◦◦
+;ramp-capacity-4 = •••••◦◦◦◦◦
+;ramp-capacity-5 = ••••••◦◦◦◦
+;ramp-capacity-6 = •••••••◦◦◦
+;ramp-capacity-7 = ••••••••◦◦
+;ramp-capacity-8 = •••••••••◦
+;ramp-capacity-9 = ••••••••••
+;
+;<ramp-capacity>
+;ramp-capacity-0 = •---------
+;ramp-capacity-1 = ••--------
+;ramp-capacity-2 = •••-------
+;ramp-capacity-3 = ••••------
+;ramp-capacity-4 = •••••-----
+;ramp-capacity-5 = ••••••----
+;ramp-capacity-6 = •••••••---
+;ramp-capacity-7 = ••••••••--
+;ramp-capacity-8 = •••••••••-
+;ramp-capacity-9 = ••••••••••
 #**************************************************************************#
 [module/pulseaudio]
 

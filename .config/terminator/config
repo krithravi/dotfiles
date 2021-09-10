@@ -16,20 +16,20 @@
   help = F7
 [profiles]
   [[default]]
-    background_color = "#02180a"
-    background_darkness = 0.82
+    background_color = "#0c100c"
+    background_darkness = 0.96
     background_type = transparent
     cursor_blink = False
     cursor_shape = ibeam
     cursor_color = "#0acd7e"
-    font = Source Code Pro 11
-    foreground_color = "#e3e3e3"
+    font = Source Code Variable 10
+    foreground_color = "#b7f7ce"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
     palette = "#000000:#e01b24:#30dd01:#f5c211:#3465a4:#e671f8:#46f3fe:#f6f5f4:#555753:#f66151:#1af462:#fce94f:#729fcf:#dc8add:#1ae5ee:#ffffff"
     bold_is_bright = True
-    background_image = /home/krithika/Desktop/manytree.jpg
+    background_image = /home/krithika/Desktop/grass.jpg
 [layouts]
   [[default]]
     [[[window0]]]
