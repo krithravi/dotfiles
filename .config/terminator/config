@@ -16,8 +16,8 @@
   help = F7
 [profiles]
   [[default]]
-    background_color = "#0c100c"
-    background_darkness = 0.96
+    background_color = "#12241a"
+    background_darkness = 1.0
     background_type = transparent
     cursor_blink = False
     cursor_shape = ibeam
