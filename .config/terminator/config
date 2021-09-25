@@ -1,6 +1,7 @@
 [global_config]
   focus = mouse
   handle_size = 1
+  borderless = True
   scroll_tabbar = True
   homogeneous_tabbar = False
   title_hide_sizetext = True
@@ -22,7 +23,7 @@
     cursor_blink = False
     cursor_shape = ibeam
     cursor_color = "#0acd7e"
-    font = Source Code Variable 10
+    font = Iosevka Term SS06 Light 10
     foreground_color = "#b7f7ce"
     show_titlebar = False
     scrollbar_position = hidden

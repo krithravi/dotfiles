@@ -208,10 +208,10 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id xrandr --output DP3 --right-of eDP1
 exec_always --no-startup-id xrandr --output eDP1 --left-of DP3
 
-exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
+#exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec_always --no-startup-id setxkbmap -option compose:ralt,caps:escape
 
-exec_always --no-startup-id feh --bg-fill ~/Desktop/leafy.jpg
+exec_always --no-startup-id feh --bg-fill ~/Desktop/forestssss.jpg
 exec_always --no-startup-id pulseaudio
 # Tapping and natural scrolling
 exec_always --no-startup-id xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Tapping Enabled" 1 &
@@ -245,8 +245,7 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 #f4ab77  // bright orange
 
 smart_borders on
-gaps inner 20
-gaps top 2
+gaps inner 15
 
 
 
