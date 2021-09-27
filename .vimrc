@@ -34,7 +34,7 @@ set tabstop=4
 set ai "Auto indent
 set si "Smart indent
 
-colorscheme hello
+colorscheme black-ocean
 "let g:tex_conceal=""
 set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 

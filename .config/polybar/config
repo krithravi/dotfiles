@@ -36,6 +36,7 @@ background = #77000000
 font-0 =Source Code Pro:style=Regular:size=10;2
 font-1 =Noto Sans:style=Regular:size=10;2
 font-2 =Noto Color Emoji:style=Regular:scale=10;2
+font-3 =Noto Sans Mono CJK KR:style=Regular:size=10;2
 
 modules-center = date
 modules-left = i3 pulseaudio
@@ -48,7 +49,7 @@ type = internal/date
 interval = 1.0
 # fullDay, dayNum fullMonth | 14:23:10
 # date = %A, %d %B | %t %X
-date = %t %X
+date = %b %d %t %X
 
 #**************************************************************************#
 [module/battery]
