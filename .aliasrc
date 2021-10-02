@@ -85,7 +85,7 @@ alias gpt='gnuplot' #gnuplot yee
 alias img='eog *.png' #show all PNG images
 alias todo='vi ~/todo' # my todo list
 alias holy='z ~/books/funBooks/jirt/FotR.pdf' # fellowship
-alias web='cd /home/krithika/code/webStuff/my-app' # my website
+alias web='cd /home/krithika/code/webStuff/myweb' # my website
 ##########################################################
 # Computer stuff so I don't go crazy
 
@@ -104,8 +104,7 @@ alias rel='source ~/.bashrc'
 alias fn='find . -name'
 alias p='ps aux | g'
 alias stor='du -h --max-depth=1 . | sort -h'
-alias eal='vi ~/.aliasrc; rel'
-alias c='calcurse'
+
 #increases brightness by input
 setb () {
 	b=$(xrandr --verbose | grep -m 1 -w connected -A8 | grep Brightness | cut -f2- -d: | tr -d ' ')
