@@ -73,6 +73,7 @@ alias gerge='git merge'
 # one-line commands
 
 alias vi='nvim' # neovim
+alias q='exit' # exit or Ctrl + d
 alias grep='grep --color=auto' # good colors
 alias z='zathura' # PDF viewer that's not trash
 alias mail='mutt' # mail client mutt
@@ -100,6 +101,7 @@ alias rem="sudo pacman -Rs"
 alias cl="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias reb='sudo reboot'
 alias wai='echo -e "\e[38;5;72m$USER\e[m is in \e[38;5;81m$HOSTNAME\e[m"; pwd'
+alias wia='wai' #because I can't type
 alias rel='source ~/.bashrc'
 alias fn='find . -name'
 alias p='ps aux | g'

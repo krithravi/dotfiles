@@ -24,7 +24,8 @@ module-margin = 1
 
 # green background
 #foreground = #a4f280
-foreground = #8ef260
+#foreground = #8ef260
+foreground = #60f274
 background = #77000000
 
 
@@ -32,15 +33,16 @@ background = #77000000
 #foreground = #f7c5ec
 #background = #000000
 
-
 font-0 =Source Code Pro:style=Regular:size=10;2
-font-1 =Noto Sans:style=Regular:size=10;2
-font-2 =Noto Color Emoji:style=Regular:scale=10;2
+font-1 =Noto Color Emoji:style=Regular:scale=10;2
+font-2 =Noto Sans:style=Regular:size=10;2
+
+
 font-3 =Noto Sans Mono CJK KR:style=Regular:size=10;2
 
 modules-center = date
 modules-left = i3 pulseaudio
-modules-right = spotify backlight battery network
+modules-right = spotify backlight battery
 
 #**************************************************************************#
 [module/date]
@@ -166,7 +168,7 @@ format-padding = 2
 #exec = python ~/scripts/spotify_status.py -f -p 'a,b' -f {play_pause} {artist}: {song}' -t 50
 #exec = python ~/scripts/spotify_status.py -t 130 -p ', ' -f '{play_pause} {song}: {artist}
 #exec = python ~/scripts/spotify_status.py -t 130 -p '▶️,×' -f '{play_pause} {artist}: {song}'
-exec = python ~/scripts/spotify_status.py -t 130 -p '🔴,🟢' -f '{play_pause} {artist}: {song}'
+exec = python ~/scripts/spotify_status.py -t 130 -p ',▶️' -f '{play_pause} {artist}: {song}'
 
 ;format-underline = #1db954
 ;control players (optional)
