@@ -9,8 +9,6 @@ Plugin 'SirVer/ultisnips'
 	let g:UltiSnipsJumpForwardTrigger="<c-b>"
 	let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 	let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/mycoolsnippets']
-Plugin 'NLKNguyen/papercolor-theme'
-	let g:transparent_background=1
 Plugin 'lervag/vimtex'
 	let g:tex_flavor='latex'
 	let g:vimtex_view_method='zathura'
@@ -38,14 +36,14 @@ colorscheme black-ocean
 "let g:tex_conceal=""
 set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 
-map u <Nop>
+map u :undo
 "autocmd BufWritePre * :%s/\s\+$//e
 
 hi NormalColor guifg=Black guibg=Green ctermbg=120 ctermfg=232 cterm=bold
 hi InsertColor guifg=Black guibg=Cyan ctermbg=81 ctermfg=232 cterm=bold
 hi ReplaceColor guifg=Black guibg=maroon1 ctermbg=165 ctermfg=232 cterm=bold
 hi VisualColor guifg=Black guibg=Orange ctermbg=141 ctermfg=232 cterm=bold
-hi CommandColor guifg=Black guibg=Orange ctermbg=208 ctermfg=232 cterm=bold
+hi CommandColor guifg=Black guibg=Orange ctermbg=214 ctermfg=232 cterm=bold
 
 hi hello ctermbg=236 ctermfg=15
 

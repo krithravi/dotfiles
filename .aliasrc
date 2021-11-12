@@ -26,6 +26,7 @@ alias amek='make'
 ##########################################################
 # SSH
 alias risk="ssh -t krithika@risk.cs.utexas.edu"
+alias sftprisk="sftp krithika@risk.cs.utexas.edu"
 # TODO get this later
 
 ## openconnect vpn
@@ -74,6 +75,7 @@ alias gerge='git merge'
 
 alias vi='nvim' # neovim
 alias q='exit' # exit or Ctrl + d
+alias q\!='exit'
 alias grep='grep --color=auto' # good colors
 alias z='zathura' # PDF viewer that's not trash
 alias mail='mutt' # mail client mutt

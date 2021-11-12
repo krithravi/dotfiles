@@ -11,4 +11,3 @@ Here are my dotfiles and config! Hopefully they're useful!
 | Fonts             | Source Code Pro, Noto Sans (good for multilingual things + emojis) |
 | Terminal emulator | terminator (multiplexing!)                                         |
 | Editor            | neovim                                                             |
-| Compositing       | picom                                                              |
