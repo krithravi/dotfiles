@@ -108,7 +108,7 @@ alias rel='source ~/.bashrc'
 alias fn='find . -name'
 alias p='ps aux | g'
 alias stor='du -h --max-depth=1 . | sort -h'
-
+alias net='ping google.com'
 #increases brightness by input
 setb () {
 	b=$(xrandr --verbose | grep -m 1 -w connected -A8 | grep Brightness | cut -f2- -d: | tr -d ' ')
