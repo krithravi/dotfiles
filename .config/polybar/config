@@ -26,7 +26,7 @@ module-margin = 1
 #foreground = #a4f280
 #foreground = #8ef260
 foreground = #60f274
-background = #77000000
+background = #0f1c17
 
 
 # that time i went purple
@@ -51,7 +51,7 @@ type = internal/date
 interval = 1.0
 # fullDay, dayNum fullMonth | 14:23:10
 # date = %A, %d %B | %t %X
-date = %b %d %t %X
+date = %a %b %d %t %X
 
 #**************************************************************************#
 [module/battery]
@@ -108,7 +108,7 @@ type = internal/pulseaudio
 format-volume = ♫ <bar-volume>
 format-volume-padding = 2
 
-bar-volume-width = 25
+bar-volume-width = 20
 bar-volume-indicator = 🌱
 
 bar-volume-fill = ─

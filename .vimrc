@@ -1,7 +1,8 @@
 se rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-Plugin 'jiangmiao/auto-pairs'
+" Plugin 'jiangmiao/auto-pairs'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'danro/rename.vim'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
@@ -20,7 +21,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'preservim/tagbar'
 	map <C-m> :TagbarToggle<CR>
 Plugin 'tpope/vim-commentary'
-	
+Plugin 'yuezk/vim-js'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'neoclide/coc.nvim', { 'branch': 'master' }
 call vundle#end()
 
 set number
@@ -47,5 +50,29 @@ hi CommandColor guifg=Black guibg=Orange ctermbg=214 ctermfg=232 cterm=bold
 
 hi hello ctermbg=236 ctermfg=15
 
-
 set guicursor+=v:ver100-iCursor
+
+" Coc config
+
+let g:coc_global_extensions = [
+	\ 'coc-pairs',
+	\ 'coc-eslint',
+	\ 'coc-json',
+	\ ]
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" STOLEN
+set updatetime=300
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? "\<C-n>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
+" inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+inoremap <silent><expr> <c-space> coc#refresh()
