@@ -42,7 +42,7 @@ font-3 =Noto Sans Mono CJK KR:style=Regular:size=10;2
 
 modules-center = date
 modules-left = i3 pulseaudio
-modules-right = spotify backlight battery
+modules-right = backlight battery
 
 #**************************************************************************#
 [module/date]
@@ -159,25 +159,26 @@ bar-indicator = ☀
 bar-fill = ─
 bar-empty = ─
 #**************************************************************************#
-[module/spotify]
-type = custom/script
-interval = 1
-format-prefix = "♫ "
-format = <label>
-format-padding = 2
-#exec = python ~/scripts/spotify_status.py -f -p 'a,b' -f {play_pause} {artist}: {song}' -t 50
-#exec = python ~/scripts/spotify_status.py -t 130 -p ', ' -f '{play_pause} {song}: {artist}
-#exec = python ~/scripts/spotify_status.py -t 130 -p '▶️,×' -f '{play_pause} {artist}: {song}'
-exec = python ~/scripts/spotify_status.py -t 130 -p ',▶️' -f '{play_pause} {artist}: {song}'
+# BACK WHEN I USED SPOTIFY
+#[module/spotify]
+#type = custom/script
+#interval = 1
+#format-prefix = "♫ "
+#format = <label>
+#format-padding = 2
+##exec = python ~/scripts/spotify_status.py -f -p 'a,b' -f {play_pause} {artist}: {song}' -t 50
+##exec = python ~/scripts/spotify_status.py -t 130 -p ', ' -f '{play_pause} {song}: {artist}
+##exec = python ~/scripts/spotify_status.py -t 130 -p '▶️,×' -f '{play_pause} {artist}: {song}'
+#exec = python ~/scripts/spotify_status.py -t 130 -p ',▶️' -f '{play_pause} {artist}: {song}'
 
-;format-underline = #1db954
-;control players (optional)
-click-left = playerctl --player=spotify play-pause 
-click-right = playerctl --player=spotify next 
-click-middle = playerctl --player=spotify previous 
+#;format-underline = #1db954
+#;control players (optional)
+#click-left = playerctl --player=spotify play-pause 
+#click-right = playerctl --player=spotify next 
+#click-middle = playerctl --player=spotify previous 
 
-[module/network]
-type = internal/network
-interface = wlan0
-format-connected =<label-connected>
-label-connected = %essid%
+#[module/network]
+#type = internal/network
+#interface = wlan0
+#format-connected =<label-connected>
+#label-connected = %essid%

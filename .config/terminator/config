@@ -23,7 +23,7 @@
     cursor_blink = False
     cursor_shape = ibeam
     cursor_color = "#0acd7e"
-    font = Iosevka Term SS06 Light 10
+    font = DejaVu Sans Code 10
     foreground_color = "#b7f7ce"
     scrollbar_position = hidden
     scrollback_infinite = True
