@@ -6,6 +6,7 @@ alias l='ls'
 alias lt='ls -lrth'
 alias sl='ls'
 alias lat='lt -A'
+alias lr='find . -maxdepth 1 -regex'
 
 # case insensitive grepping with ls
 li () {
@@ -27,7 +28,6 @@ alias amek='make'
 # SSH
 alias risk="ssh -t krithika@risk.cs.utexas.edu"
 alias sftprisk="sftp krithika@risk.cs.utexas.edu"
-# TODO get this later
 
 ## openconnect vpn
 alias untvpn="sudo $HOME/scripts/unt_vpn_start.sh"
@@ -35,11 +35,13 @@ alias utvpn="sudo $HOME/scripts/ut_vpn_start.sh"
 alias vpnend="sudo $HOME/scripts/vpn_end.sh"
 
 ##########################################################
-
+# kittens for kitty
+alias icat="kitty +kitten icat"
 ##########################################################
 # getting into certain directories without the hassle
 
 alias parp='cd ~/researchstuff'
+alias swe='cd ~/code/coursework/swe/gallerydb'
 alias toc='cd ~/code'
 alias fun='cd ~/fun'
 alias doc='cd ~/Documents'
@@ -88,7 +90,7 @@ alias gpt='gnuplot' #gnuplot yee
 alias img='eog *.png' #show all PNG images
 alias todo='vi ~/todo' # my todo list
 alias holy='z ~/books/funBooks/jirt/FotR.pdf' # fellowship
-alias web='cd /home/krithika/code/webStuff/myweb' # my website
+alias web='cd /home/krithika/code/webStuff/site' # my website
 ##########################################################
 # Computer stuff so I don't go crazy
 
@@ -103,13 +105,15 @@ alias rem="sudo pacman -Rs"
 alias cl="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias quer="pacman -Ss"
 alias reb='sudo reboot'
-alias wai='echo -e "\e[38;5;72m$USER\e[m is in \e[38;5;81m$HOSTNAME\e[m"; pwd'
+alias wai='echo -e "\e[38;5;72m$USER\e[m is in \e[38;5;81m$HOSTNAME\e[m"; /home/krithika/scripts/curr_dir.py'
 alias wia='wai' #because I can't type
 alias rel='source ~/.bashrc'
 alias fn='find . -name'
 alias p='ps aux | g'
 alias stor='du -h --max-depth=1 . | sort -h'
-alias net='ping google.com'
+alias n='ping google.com'
+alias rn='sudo systemctl restart iwd'
+
 #increases brightness by input
 setb () {
 	b=$(xrandr --verbose | grep -m 1 -w connected -A8 | grep Brightness | cut -f2- -d: | tr -d ' ')
