@@ -218,6 +218,7 @@ exec_always --no-startup-id xinput set-prop "ELAN074E:00 04F3:31B5 Touchpad" "li
 
 exec_always --no-startup-id xinput set-prop "ELAN074E:00 04F3:31B5 Touchpad" "libinput Natural Scrolling Enabled" 1
 
+exec_always --no-startup-id libinput-gestures-setup stop desktop autostart start
 # Brightness
 # xrandr version
 #bindsym XF86MonBrightnessUp exec /home/krithika/scripts/bright_up.sh
