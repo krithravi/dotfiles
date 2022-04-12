@@ -17,7 +17,7 @@ if [ -f ~/.aliasrc ]; then
 fi
 
 
-LS_COLORS="di=1;36:\
+LS_COLORS="di=1;36:ln=0;36:\
 *.png=0;35:*.jpg=0;35:*.jpeg=0;35:\
 *.zip=0;31:*.jar=0;31:*.tar.gz=0;31:*.tar=0;31:\
 *pdf=1;32:*djvu=1;32:*mobi=1;32:*epub=1;32:\
