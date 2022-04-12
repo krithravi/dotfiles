@@ -11,6 +11,7 @@ Plug 'preservim/tagbar'
 Plug 'tpope/vim-commentary'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'lervag/vimtex'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
