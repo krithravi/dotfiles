@@ -4,10 +4,10 @@ Here are my dotfiles and config! Hopefully they're useful!
 
 | yee               | haw                                                                |
 |-------------------|--------------------------------------------------------------------|
-| Distro            | Archlinux                                                          |
+| Distro            | Arch Linux                                                          |
 | Shell             | bash                                                               |
 | WM                | i3-gaps                                                            |
 | Bar               | polybar                                                            |
 | Fonts             | Ubuntu Ligaturized, Noto Sans                                      |
-| Terminal emulator | kitty (multiplexing + ligatures + lightweight)                     |
+| Terminal emulator | kitty                                                              |
 | Editor            | neovim                                                             |

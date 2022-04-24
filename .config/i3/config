@@ -211,7 +211,7 @@ exec_always --no-startup-id xrandr --output eDP1 --left-of HDMI-A-0
 #exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec_always --no-startup-id setxkbmap -option compose:ralt,caps:escape
 
-exec_always --no-startup-id feh --bg-fill ~/Desktop/leafy.jpg
+exec_always --no-startup-id feh --bg-fill ~/Desktop/grass.jpg
 exec_always --no-startup-id pulseaudio
 # Tapping and natural scrolling
 exec_always --no-startup-id xinput set-prop "ELAN074E:00 04F3:31B5 Touchpad" "libinput Tapping Enabled" 1 &

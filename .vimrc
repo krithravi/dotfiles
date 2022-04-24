@@ -13,10 +13,11 @@ Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'lervag/vimtex'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
-call plug#end()
 
+call plug#end()
 set number
 set cursorline
+set cursorcolumn
 set mouse=a
 set shiftwidth=4
 set tabstop=4
@@ -25,11 +26,9 @@ set ai "Auto indent
 set si "Smart indent
 
 colorscheme black-ocean
-"let g:tex_conceal=""
 set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 
 map u :undo
-"autocmd BufWritePre * :%s/\s\+$//e
 
 hi NormalColor guifg=Black guibg=Green ctermbg=120 ctermfg=232 cterm=bold
 hi InsertColor guifg=Black guibg=Cyan ctermbg=81 ctermfg=232 cterm=bold
@@ -42,7 +41,7 @@ hi hello ctermbg=236 ctermfg=15
 set guicursor+=v:ver100-iCursor
 
 function MyCustomHighlights()
-    hi semshiGlobal          ctermfg=red guifg=#ff0000
+	hi semshiGlobal          ctermfg=red guifg=#ff0000
 	hi semshiLocal           ctermfg=209 guifg=#ff875f
 	hi semshiGlobal          ctermfg=36  guifg=#0faf87
 	hi semshiImported        ctermfg=36  guifg=#0faf87 cterm=bold gui=bold
