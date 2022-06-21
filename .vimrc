@@ -13,6 +13,9 @@ Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'lervag/vimtex'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
+	let g:vim_markdown_math = 1
 
 call plug#end()
 set number
@@ -39,6 +42,7 @@ hi CommandColor guifg=Black guibg=Orange ctermbg=214 ctermfg=232 cterm=bold
 hi hello ctermbg=236 ctermfg=15
 
 set guicursor+=v:ver100-iCursor
+
 
 function MyCustomHighlights()
 	hi semshiGlobal          ctermfg=red guifg=#ff0000

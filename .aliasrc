@@ -25,22 +25,27 @@ alias mkae='make'
 alias amek='make'
 
 ##########################################################
+# kittens for kitty
+alias icat="kitty +kitten icat"
+alias s="kitty +kitten ssh"
+
+##########################################################
 # SSH
 alias risk="ssh -t krithika@risk.cs.utexas.edu"
 alias sftprisk="sftp krithika@risk.cs.utexas.edu"
+alias tacc="s krithika@ls6.tacc.utexas.edu"
 
 ## openconnect vpn
 alias untvpn="sudo $HOME/scripts/unt_vpn_start.sh"
 alias utvpn="sudo $HOME/scripts/ut_vpn_start.sh"
 alias vpnend="sudo $HOME/scripts/vpn_end.sh"
 
-##########################################################
-# kittens for kitty
-alias icat="kitty +kitten icat"
+
 ##########################################################
 # getting into certain directories without the hassle
 
-alias parp='cd ~/researchstuff'
+alias rna='cd ~/researchstuff'
+alias parp='cd ~/parp'
 alias swe='cd ~/code/coursework/swe/gallerydb'
 alias toc='cd ~/code'
 alias fun='cd ~/fun'
@@ -110,6 +115,7 @@ alias wia='wai' #because I can't type
 alias rel='source ~/.bashrc'
 alias fn='find . -name'
 alias p='ps aux | g'
+alias psaux='p'
 alias stor='du -h --max-depth=1 . | sort -h'
 alias n='ping google.com'
 alias rn='sudo systemctl restart iwd'

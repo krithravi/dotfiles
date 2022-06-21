@@ -133,7 +133,7 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws0
 bindsym $mod+Ctrl+1 workspace $ws11
 bindsym $mod+Ctrl+2 workspace $ws12
-bindsym $mod+Ctrl+3 workspac $ws13
+bindsym $mod+Ctrl+3 workspace $ws13
 bindsym $mod+Ctrl+4 workspace $ws14
 bindsym $mod+Ctrl+5 workspace $ws15
 bindsym $mod+Ctrl+6 workspace $ws16
@@ -208,10 +208,9 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id xrandr --output HDMI-A-0 --right-of eDP1
 exec_always --no-startup-id xrandr --output eDP1 --left-of HDMI-A-0
 
-#exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec_always --no-startup-id setxkbmap -option compose:ralt,caps:escape
 
-exec_always --no-startup-id feh --bg-fill ~/Desktop/grass.jpg
+exec_always --no-startup-id feh --bg-fill ~/Desktop/leafy.jpg
 exec_always --no-startup-id pulseaudio
 # Tapping and natural scrolling
 exec_always --no-startup-id xinput set-prop "ELAN074E:00 04F3:31B5 Touchpad" "libinput Tapping Enabled" 1 &

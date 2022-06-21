@@ -33,16 +33,15 @@ background = #0f1c17
 #foreground = #f7c5ec
 #background = #000000
 
-font-0 =Source Code Pro:style=Regular:size=10;2
-font-1 =Noto Color Emoji:style=Regular:scale=10;2
-font-2 =Noto Sans:style=Regular:size=10;2
-
-
-font-3 =Noto Sans Mono CJK KR:style=Regular:size=10;2
+font-0 =Ubuntu Mono Ligaturized:style=Regular:size=12;2
+font-1 =Source Code Pro:style=Regular:size=10;2
+font-2 =Noto Color Emoji:style=Regular:scale=10;2
+font-3 =Noto Sans:style=Regular:size=10;2
+font-4 =Noto Sans Mono CJK KR:style=Regular:size=10;2
 
 modules-center = date
 modules-left = i3 pulseaudio
-modules-right = backlight battery
+modules-right = backlight network battery
 
 #**************************************************************************#
 [module/date]
@@ -182,3 +181,29 @@ bar-empty = ─
 #interface = wlan0
 #format-connected =<label-connected>
 #label-connected = %essid%
+
+#**************************************************************************#
+[module/network]
+
+type = internal/network
+interface = wlan0
+interval = 3.0
+
+label-connected = %essid%
+format-connected = <label-connected> : <ramp-signal>
+format-connected-padding = 2
+
+format-disconnected = X
+format-disconnected-padding = 2
+
+; ramp-signal-0 = •◦◦◦◦
+; ramp-signal-1 = ••◦◦◦
+; ramp-signal-2 = •••◦◦
+; ramp-signal-3 = ••••◦
+; ramp-signal-4 = •••••
+
+ramp-signal-0 = •----
+ramp-signal-1 = ••---
+ramp-signal-2 = •••--
+ramp-signal-3 = ••••-
+ramp-signal-4 = •••••
