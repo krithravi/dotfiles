@@ -46,9 +46,7 @@ bindsym $mod+d exec dmenu_run -fn 'Source Code Pro:style=Regular' -nb '#1e1e1e' 
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # my lock screen (doors of durin, but white on black)
-bindsym $mod+p exec i3lock -i /home/krithika/Pictures/neg_doordurin.png -t -e \
---insidever-color=#3baa9c --ringver-color=#126d61 --verif-text="Verifying..." --wrong-text="Wrong :(" -k --time-color=#7edb64 --date-color=#7edb64 --date-str="%A %b %d" --noinput-text="" --radius=120 --indicator --ring-width=11 --bshl-color=#311572 --insidewrong-color=#dd0687 --ringwrong-color=#99065e
-
+bindsym $mod+p exec /home/krithika/dotfiles/.config/i3/lock.sh
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -213,7 +211,8 @@ exec_always --no-startup-id xrandr --output eDP1 --left-of HDMI-A-0
 exec_always --no-startup-id setxkbmap -option compose:ralt,caps:escape
 
 exec_always --no-startup-id feh --bg-fill ~/Desktop/leafy.jpg
-exec_always --no-startup-id pulseaudio --start
+exec_always systemctl --user enable pulseaudio --now
+
 # Tapping and natural scrolling
 exec_always --no-startup-id xinput set-prop "ELAN074E:00 04F3:31B5 Touchpad" "libinput Tapping Enabled" 1 &
 
@@ -221,12 +220,9 @@ exec_always --no-startup-id xinput set-prop "ELAN074E:00 04F3:31B5 Touchpad" "li
 
 exec_always --no-startup-id libinput-gestures-setup stop desktop autostart start
 # Brightness
-# xrandr version
-#bindsym XF86MonBrightnessUp exec /home/krithika/scripts/bright_up.sh
-#bindsym XF86MonBrightnessDown exec /home/krithika/scripts/bright_down.sh
-
 bindsym XF86MonBrightnessUp exec brightnessctl s +5%
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
+
 # Sound
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%-
