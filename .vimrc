@@ -20,7 +20,6 @@ Plug 'preservim/vim-markdown'
 call plug#end()
 set number
 set cursorline
-set cursorcolumn
 set mouse=a
 set shiftwidth=4
 set tabstop=4
