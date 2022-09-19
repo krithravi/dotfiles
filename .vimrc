@@ -54,7 +54,7 @@ function MyCustomHighlights()
 	hi semshiBuiltin         ctermfg=122 guifg=#87ffd7
 	hi semshiAttribute       ctermfg=49  guifg=#00ffaf
 	hi semshiSelf            ctermfg=249 guifg=#b2b2b2
-	hi semshiUnresolved      ctermfg=226 guifg=#ffff00 cterm=underline gui=underline
+	hi semshiUnresolved      ctermfg=226 guifg=#7944aa cterm=underline gui=underline
 	hi semshiSelected        ctermfg=231 guifg=#ffffff ctermbg=34  guibg=#00af00
 
 	hi semshiErrorSign       ctermfg=231 guifg=#ffffff ctermbg=160 guibg=#d70000

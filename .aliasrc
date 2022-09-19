@@ -81,6 +81,7 @@ alias gerge='git merge'
 # one-line commands
 
 alias vi='nvim' # neovim
+alias va='vi -p *' # open all
 alias q='exit' # exit or Ctrl + d
 alias q\!='exit'
 alias grep='grep --color=auto' # good colors
