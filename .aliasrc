@@ -27,26 +27,12 @@ alias amek='make'
 ##########################################################
 # kittens for kitty
 alias icat="kitty +kitten icat"
-alias s="kitty +kitten ssh"
-
-##########################################################
-# SSH
-alias risk="ssh -t krithika@risk.cs.utexas.edu"
-alias sftprisk="sftp krithika@risk.cs.utexas.edu"
-alias tacc="s krithika@ls6.tacc.utexas.edu"
-
-## openconnect vpn
-alias untvpn="sudo $HOME/scripts/unt_vpn_start.sh"
-alias utvpn="sudo $HOME/scripts/ut_vpn_start.sh"
-alias vpnend="sudo $HOME/scripts/vpn_end.sh"
-
 
 ##########################################################
 # getting into certain directories without the hassle
 
 alias rna='cd ~/researchstuff'
 alias parp='cd ~/parp'
-alias swe='cd ~/code/coursework/swe/gallerydb'
 alias toc='cd ~/code'
 alias fun='cd ~/fun'
 alias doc='cd ~/Documents'
@@ -56,7 +42,6 @@ alias play='cd ~/playground'
 alias dsk='cd ~/Desktop'
 alias conf='cd ~/dotfiles/.config'
 alias scr="cd ~/scripts"
-alias pippin='ssh pippin'
 
 # moving up directories faster (sorta like zsh)
 alias ..="cd .."
@@ -111,7 +96,7 @@ alias rem="sudo pacman -Rs"
 alias cl="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias quer="pacman -Ss"
 alias reb='sudo reboot'
-alias wai='echo -e "\e[38;5;72m$USER\e[m is in \e[38;5;81m$HOSTNAME\e[m"; /home/krithika/scripts/curr_dir.py'
+alias wai='echo -e "\e[38;5;72m$USER\e[m is in \e[38;5;81m$HOSTNAME\e[m"; $HOME/scripts/curr_dir.py'
 alias wia='wai' #because I can't type
 alias rel='source ~/.bashrc'
 alias fn='find . -name'

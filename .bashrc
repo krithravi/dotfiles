@@ -17,7 +17,7 @@ if [ -f ~/.aliasrc ]; then
 fi
 
 
-LS_COLORS="di=1;36:ln=0;36:\
+export LS_COLORS="di=1;36:ln=0;36:\
 *.png=0;35:*.jpg=0;35:*.jpeg=0;35:\
 *.zip=0;31:*.jar=0;31:*.tar.gz=0;31:*.tar=0;31:\
 *pdf=1;32:*djvu=1;32:*mobi=1;32:*epub=1;32:\
@@ -26,8 +26,6 @@ LS_COLORS="di=1;36:ln=0;36:\
 *akefile=1;34:\
 ex=1;33:\
 *.dat=0;34:*.class=0;34:*.txt=0;34:*.csv=0;34"
-
-export LS_COLORS;
 
 # making man pages a bit easier to read
 export LESS_TERMCAP_mb=$'\E[01;31m'

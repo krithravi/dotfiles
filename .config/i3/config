@@ -47,6 +47,8 @@ bindsym $mod+d exec dmenu_run -fn 'Source Code Pro:style=Regular' -nb '#1e1e1e' 
 
 # my lock screen (doors of durin, but white on black)
 bindsym $mod+p exec /home/krithika/dotfiles/.config/i3/lock.sh
+bindsym $mod+Shift+p exec /home/krithika/dotfiles/.config/i3/lock.sh && systemctl suspend
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
