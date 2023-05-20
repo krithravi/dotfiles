@@ -12,11 +12,17 @@ Plug 'tpope/vim-commentary'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'lervag/vimtex'
-Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
-Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 	let g:vim_markdown_math = 1
-
+Plug 'dense-analysis/ale'
+	let b:ale_fixers = {'javascript': ['eslint', 'prettier'], 'python': ['pyright']}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+	nnoremap <leader>ff <cmd>Telescope find_files<cr>
+	nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+	nnoremap <leader>fb <cmd>Telescope buffers<cr>
+	nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+	
 call plug#end()
 set number
 set cursorline
@@ -26,6 +32,7 @@ set tabstop=4
 
 set ai "Auto indent
 set si "Smart indent
+set conceallevel=2
 
 colorscheme black-ocean
 set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
@@ -41,24 +48,3 @@ hi CommandColor guifg=Black guibg=Orange ctermbg=214 ctermfg=232 cterm=bold
 hi hello ctermbg=236 ctermfg=15
 
 set guicursor+=v:ver100-iCursor
-
-
-function MyCustomHighlights()
-	hi semshiGlobal          ctermfg=red guifg=#ff0000
-	hi semshiLocal           ctermfg=209 guifg=#ff875f
-	hi semshiGlobal          ctermfg=36  guifg=#0faf87
-	hi semshiImported        ctermfg=36  guifg=#0faf87 cterm=bold gui=bold
-	hi semshiParameter       ctermfg=75  guifg=#5fafff
-	hi semshiParameterUnused ctermfg=117 guifg=#87d7ff cterm=underline gui=underline
-	hi semshiFree            ctermfg=218 guifg=#ffafd7
-	hi semshiBuiltin         ctermfg=122 guifg=#87ffd7
-	hi semshiAttribute       ctermfg=49  guifg=#00ffaf
-	hi semshiSelf            ctermfg=249 guifg=#b2b2b2
-	hi semshiUnresolved      ctermfg=226 guifg=#7944aa cterm=underline gui=underline
-	hi semshiSelected        ctermfg=231 guifg=#ffffff ctermbg=34  guibg=#00af00
-
-	hi semshiErrorSign       ctermfg=231 guifg=#ffffff ctermbg=160 guibg=#d70000
-	hi semshiErrorChar       ctermfg=231 guifg=#ffffff ctermbg=160 guibg=#d70000
-endfunction
-
-autocmd FileType python call MyCustomHighlights()
