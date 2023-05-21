@@ -41,7 +41,7 @@ alias boo='cd ~/books'
 alias play='cd ~/playground'
 alias dsk='cd ~/Desktop'
 alias conf='cd ~/dotfiles/.config'
-alias scr="cd ~/scripts"
+alias scr="cd ~/dotfiles/scripts"
 
 # moving up directories faster (sorta like zsh)
 alias ..="cd .."
@@ -96,7 +96,7 @@ alias rem="sudo pacman -Rs"
 alias cl="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias quer="pacman -Ss"
 alias reb='sudo reboot'
-alias wai='echo -e "\e[38;5;72m$USER\e[m is in \e[38;5;81m$HOSTNAME\e[m"; $HOME/scripts/curr_dir.py'
+alias wai='echo -e "\e[38;5;72m$USER\e[m is in \e[38;5;81m$HOSTNAME\e[m"; $HOME/dotfiles/scripts/curr_dir.py'
 alias wia='wai' #because I can't type
 alias rel='source ~/.bashrc'
 alias fn='find . -name'
@@ -128,6 +128,6 @@ mgo () {
 # Fun stuff!
 
 alias frog='cat ~/fun/frog.txt'
-alias quo='py $HOME/scripts/quote/quote.py'
+alias quo='py $HOME/dotfiles/scripts/quote/quote.py'
 alias cc='fortune' #fortune! cookie...
 alias frogfortune='fortune | cowthink -f bud-frogs'
