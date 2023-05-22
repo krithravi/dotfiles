@@ -42,4 +42,5 @@ export TERMINAL="/usr/bin/kitty"
 setxkbmap -option compose:ralt,caps:escape
 
 export PATH=/home/krithika/.local/bin:$PATH
+source /usr/share/bash-completion/completions/git
 #quo
