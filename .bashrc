@@ -11,7 +11,7 @@ alias ls='ls --color=auto'
 #export PS1='\[\e[1;32m\][\w ] \[\e[m\]'
 #export PS1='\[\e[1;92m\][\w] \[\e[m\]'
 #export PS1='\[\e[38;5;154m\][\w@\[\e[m\]\[\e[38;5;218m\]\H\[\e[m\]\[\e[38;5;154m\]] \[\e[m\]'
-export PS1='\[\e[1;32m\]> \[\e[m\]'
+export PS1=' \w\n \[\e[1;32m\]> \[\e[m\]'
 if [ -f ~/.aliasrc ]; then
     . ~/.aliasrc
 fi
@@ -44,3 +44,6 @@ setxkbmap -option compose:ralt,caps:escape
 export PATH=/home/krithika/.local/bin:$PATH
 source /usr/share/bash-completion/completions/git
 #quo
+#
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

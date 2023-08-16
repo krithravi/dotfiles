@@ -31,8 +31,7 @@ alias icat="kitty +kitten icat"
 ##########################################################
 # getting into certain directories without the hassle
 
-alias rna='cd ~/researchstuff'
-alias parp='cd ~/parp'
+alias parp='cd ~/researchstuff'
 alias toc='cd ~/code'
 alias fun='cd ~/fun'
 alias doc='cd ~/Documents'
