@@ -1,6 +1,29 @@
 #!/bin/bash
 
-i3lock -i /home/krithika/dotfiles/desktops/neg_doordurin.png -t -e -k \
---insidever-color=#3baa9c --ringver-color=#126d61 --verif-text="Verifying..." \
---insidewrong-color=#c3c3c3 --ringwrong-color=#99065e --wrong-text="Wrong ☹" \
---time-color=#64db98 --date-color=#64db98 --date-str="%A %b %d" --noinput-text="Empty" --radius=120 --indicator --ring-width=11 --bshl-color=#311572 --ring-color=#64db98 --keyhl-color=#237762
+TEXT='#64db98'
+WRONGCOLOR='#6d1521'
+RINGVER='#126d61'
+BACKSPACE='#145e72'
+KEYPRESS='#237762'
+BACKGROUND='#000000c4'
+
+i3lock \
+-i /home/krithika/dotfiles/desktops/cropped_bagend.jpg -t -e -k \
+--insidever-color=$BACKGROUND \
+--ringver-color=$RINGVER \
+--verif-text="Verifying..." \
+--verif-color=$TEXT \
+--insidewrong-color=$BACKGROUND \
+--ringwrong-color=$WRONGCOLOR \
+--wrong-text="Wrong" \
+--wrong-color=$TEXT \
+--time-color=$TEXT \
+--date-color=$TEXT \
+--date-str="%A, %B %d" \
+--noinput-text="Empty" \
+--radius=120 \
+--indicator \
+--ring-width=11 \
+--bshl-color=$BACKSPACE \
+--ring-color=$TEXT \
+--keyhl-color=$KEYPRESS
