@@ -1,3 +1,6 @@
+BACKGROUND='#1e1e1e'
+FOREGROUND='#6ffc99'
+
 #!/bin/bash
 cachedir=${XDG_CACHE_HOME:-"$HOME/.cache"}
 if [ -d "$cachedir" ]; then
@@ -21,9 +24,9 @@ cmd=`(
             source $aliases
 	    	alias | awk -F '[ =]' '{print $2}'
 	    	compgen -A function
-          ) | sort -u | tee "$cache" | dmenu -nb '#1e1e1e' -sf '#1e1e1e' -sb '#88fc6f' -nf '#88fc6f' "$@"
+          ) | sort -u | tee "$cache" | dmenu -fn 'Source Code Pro:style=Regular' -nb $BACKGROUND -sf $BACKGROUND -sb $FOREGROUND -nf $FOREGROUND "$@"
 	else
-		dmenu -nb '#1e1e1e' -sf '#1e1e1e' -sb '#88fc6f' -nf '#88fc6f' "$@" < "$cache"
+		dmenu -fn 'Source Code Pro:style=Regular' -nb $BACKGROUND -sf $BACKGROUND -sb $FOREGROUND -nf $FOREGROUND "$@" < "$cache"
 	fi
 )`
 
