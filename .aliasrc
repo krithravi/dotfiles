@@ -81,6 +81,11 @@ alias img='eog *.png' #show all PNG images
 alias todo='vi ~/todo' # my todo list
 alias holy='z ~/books/funBooks/jirt/FotR.pdf' # fellowship
 alias web='cd /home/krithika/code/webStuff/my-site' # my website
+alias ff='firefox' # browser
+alias fp='firefox --private-window' # private window in firefox
+alias snip='scrot -s' # screenshot interactive
+alias sp='spotify' # spotify
+
 ##########################################################
 # Computer stuff so I don't go crazy
 
