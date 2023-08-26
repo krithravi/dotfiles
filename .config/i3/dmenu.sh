@@ -1,3 +1,5 @@
+## Doesn't properly work unfortunately
+
 BACKGROUND='#1e1e1e'
 FOREGROUND='#6ffc99'
 
