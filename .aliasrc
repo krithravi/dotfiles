@@ -41,6 +41,7 @@ alias play='cd ~/playground'
 alias dsk='cd ~/Desktop'
 alias conf='cd ~/dotfiles/.config'
 alias scr="cd ~/dotfiles/scripts"
+alias dot="cd ~/dotfiles/"
 
 # moving up directories faster (sorta like zsh)
 alias ..="cd .."
