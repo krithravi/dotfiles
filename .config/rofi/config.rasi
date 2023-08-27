@@ -13,7 +13,7 @@
     palette-bg1: #283135;
     palette-fg0: #e6e6e6;
     palette-fg1: #c5ccdc;
-    palette-highlight: #359b88;
+    palette-highlight: #349b5d;
     palette-urgent: #e5514a;
 
     /* Base colors */
