@@ -47,7 +47,7 @@ bindsym $mod+d exec rofi -show combi
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # my lock screen (doors of durin, but white on black)
-bindsym $mod+m exec /home/krithika/dotfiles/.config/i3/lock.sh
+bindsym $mod+p exec /home/krithika/dotfiles/.config/i3/lock.sh
 
 # change focus
 bindsym $mod+h focus left
