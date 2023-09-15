@@ -209,7 +209,7 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id setxkbmap -option compose:ralt,caps:escape
 
-exec_always --no-startup-id feh --bg-fill ~/dotfiles/desktops/grass.jpg
+exec_always --no-startup-id feh --bg-fill ~/dotfiles/desktops/monstera.jpg
 exec_always systemctl --user enable pulseaudio --now
 
 # Tapping and natural scrolling
