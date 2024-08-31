@@ -88,6 +88,8 @@ alias snip='scrot -s' # screenshot interactive
 alias sp='spotify' # spotify
 alias r='ranger' # file browsing
 
+### temp
+alias linal='cd /home/krithika/code/coursework/linal'
 ##########################################################
 # Computer stuff so I don't go crazy
 

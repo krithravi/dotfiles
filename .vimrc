@@ -39,12 +39,14 @@ set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 
 map u :undo
 
-hi NormalColor guifg=Black guibg=Green ctermbg=120 ctermfg=232 cterm=bold
-hi InsertColor guifg=Black guibg=Cyan ctermbg=81 ctermfg=232 cterm=bold
-hi ReplaceColor guifg=Black guibg=maroon1 ctermbg=165 ctermfg=232 cterm=bold
-hi VisualColor guifg=Black guibg=Orange ctermbg=141 ctermfg=232 cterm=bold
-hi CommandColor guifg=Black guibg=Orange ctermbg=214 ctermfg=232 cterm=bold
-
-hi hello ctermbg=236 ctermfg=15
-
 set guicursor+=v:ver100-iCursor
+
+" Disable Copilot by default
+let g:copilot_enabled = 0
+
+" Autocmd to enable Copilot in ~/code
+augroup CopilotConfig
+  autocmd!
+  autocmd BufEnter ~/code/coursework/* let g:copilot_enabled = 1
+  autocmd BufLeave ~/code/* let g:copilot_enabled = 0
+augroup END
