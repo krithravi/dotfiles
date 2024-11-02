@@ -14,14 +14,19 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'lervag/vimtex'
 Plug 'preservim/vim-markdown'
 	let g:vim_markdown_math = 1
-Plug 'dense-analysis/ale'
-	let b:ale_fixers = {'javascript': ['eslint', 'prettier'], 'python': ['pyright']}
+	let g:vim_markdown_folding_disabled = 1
+	let g:vim_markdown_frontmatter = 1
+	let g:vim_markdown_math = 1
+	let g:vim_markdown_strikethrough = 1
+	let g:vim_markdown_borderless_table = 1
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+Plug 'nvim-telescope/telescope.nvim'
 	nnoremap <leader>ff <cmd>Telescope find_files<cr>
 	nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 	nnoremap <leader>fb <cmd>Telescope buffers<cr>
 	nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-pandoc/vim-rmarkdown'
 	
 call plug#end()
 set number
