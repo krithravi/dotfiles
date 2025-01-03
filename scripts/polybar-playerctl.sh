@@ -6,6 +6,6 @@ if [ "$(pidof "$PLAYER")" != "" ];
 then
 	echo " $PLAYER: $(playerctl --player="$PLAYER" status)"
 else
-	echo "❌"
+	echo "🗙"
 fi
 
