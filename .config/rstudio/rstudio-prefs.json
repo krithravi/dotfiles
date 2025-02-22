@@ -3,15 +3,48 @@
     "font_size_points": 12,
     "pdf_previewer": "system",
     "posix_terminal_shell": "bash",
-    "help_font_size_points": 11,
+    "help_font_size_points": 12,
     "python_type": "system",
-    "python_version": "3.10.8",
-    "python_path": "/usr/bin/python3.10",
+    "python_version": "3.13.1",
+    "python_path": "/usr/bin/python",
     "terminal_bell_style": "none",
     "jobs_tab_visibility": "shown",
     "document_author": "Krithika Ravishankar",
-    "editor_theme": "Chaos",
+    "editor_theme": "Krith",
     "num_spaces_for_tab": 4,
     "insert_native_pipe_operator": true,
-    "blinking_cursor": false
+    "blinking_cursor": false,
+    "highlight_selected_line": true,
+    "strip_trailing_whitespace": true,
+    "rmd_viewer_type": "pane",
+    "panes": {
+        "quadrants": [
+            "Source",
+            "Console",
+            "TabSet1",
+            "TabSet2"
+        ],
+        "tabSet1": [
+            "Environment",
+            "History",
+            "Connections",
+            "Build",
+            "VCS",
+            "Tutorial",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Files",
+            "Plots",
+            "Viewer",
+            "Presentations"
+        ],
+        "hiddenTabSet": [
+            "Packages",
+            "Help"
+        ],
+        "console_left_on_top": false,
+        "console_right_on_top": true,
+        "additional_source_columns": 0
+    }
 }

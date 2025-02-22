@@ -14,7 +14,8 @@
     palette-fg0: #e6e6e6;
     palette-fg1: #c5ccdc;
     palette-highlight: #349b5d;
-    palette-urgent: #e5514a;
+    /* palette-urgent: #e5514a; */
+	palette-urgent: #349b7b;
 
     /* Base colors */
     background:                  @palette-bg0;
@@ -39,7 +40,7 @@
 
     /* Urgent colors */
     urgent-background:           @background;
-    urgent-foreground:          @palette-urgent;
+    urgent-foreground:           @palette-urgent;
     alternate-urgent-background: @alternate-normal-background;
     alternate-urgent-foreground: @urgent-foreground;
     selected-urgent-background:  @urgent-foreground;

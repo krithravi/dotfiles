@@ -14,14 +14,19 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'lervag/vimtex'
 Plug 'preservim/vim-markdown'
 	let g:vim_markdown_math = 1
-Plug 'dense-analysis/ale'
-	let b:ale_fixers = {'javascript': ['eslint', 'prettier'], 'python': ['pyright']}
+	let g:vim_markdown_folding_disabled = 1
+	let g:vim_markdown_frontmatter = 1
+	let g:vim_markdown_math = 1
+	let g:vim_markdown_strikethrough = 1
+	let g:vim_markdown_borderless_table = 1
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+Plug 'nvim-telescope/telescope.nvim'
 	nnoremap <leader>ff <cmd>Telescope find_files<cr>
 	nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 	nnoremap <leader>fb <cmd>Telescope buffers<cr>
 	nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-pandoc/vim-rmarkdown'
 	
 call plug#end()
 set number
@@ -39,12 +44,14 @@ set clipboard^=unnamed,unnamedplus " clipboard = normal clipboard, i use xclip
 
 map u :undo
 
-hi NormalColor guifg=Black guibg=Green ctermbg=120 ctermfg=232 cterm=bold
-hi InsertColor guifg=Black guibg=Cyan ctermbg=81 ctermfg=232 cterm=bold
-hi ReplaceColor guifg=Black guibg=maroon1 ctermbg=165 ctermfg=232 cterm=bold
-hi VisualColor guifg=Black guibg=Orange ctermbg=141 ctermfg=232 cterm=bold
-hi CommandColor guifg=Black guibg=Orange ctermbg=214 ctermfg=232 cterm=bold
-
-hi hello ctermbg=236 ctermfg=15
-
 set guicursor+=v:ver100-iCursor
+
+" Disable Copilot by default
+let g:copilot_enabled = 0
+
+" Autocmd to enable Copilot in ~/code
+augroup CopilotConfig
+  autocmd!
+  autocmd BufEnter ~/code/coursework/* let g:copilot_enabled = 1
+  autocmd BufLeave ~/code/* let g:copilot_enabled = 0
+augroup END

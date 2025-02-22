@@ -81,12 +81,15 @@ alias gpt='gnuplot' #gnuplot yee
 alias img='eog *.png' #show all PNG images
 alias todo='vi ~/todo' # my todo list
 alias holy='z ~/books/funBooks/jirt/FotR.pdf' # fellowship
-alias web='cd /home/krithika/code/webStuff/my-site' # my website
+alias web='cd /home/krithika/code/my-site' # my website
 alias ff='firefox' # browser
 alias fp='firefox --private-window' # private window in firefox
 alias snip='scrot -s' # screenshot interactive
 alias sp='spotify' # spotify
+alias r='ranger' # file browsing
+alias w='py /home/krithika/dotfiles/scripts/weather.py'
 
+### temp
 ##########################################################
 # Computer stuff so I don't go crazy
 
@@ -100,6 +103,7 @@ alias up="sudo pacman -Syu"
 alias rem="sudo pacman -Rs"
 alias cl="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias quer="pacman -Ss"
+alias qy="yay -Ss"
 alias reb='sudo reboot'
 alias wai='echo -e "\e[38;5;72m$USER\e[m is in \e[38;5;81m$HOSTNAME\e[m"; $HOME/dotfiles/scripts/curr_dir.py'
 alias wia='wai' #because I can't type
